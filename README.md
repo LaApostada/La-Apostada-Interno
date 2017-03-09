@@ -1,4 +1,4 @@
-# Servicio Interno de La Apotada
+# Servicio Interno de La Apostada
 
 Servicio Interno de aplicación La Apostada
 
