@@ -11,9 +11,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.scheduling.annotation.AsyncConfigurerSupport;
-import org.springframework.scheduling.annotation.EnableAsync;
-import org.springframework.scheduling.annotation.EnableScheduling;
-import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 
 import apostada.entidades.Apuesta;
 import apostada.entidades.Partido;
@@ -23,8 +20,6 @@ import apostada.servicios.PartidoService;
 
 
 @SpringBootApplication
-@EnableScheduling
-@EnableAsync
 public class Application extends AsyncConfigurerSupport  {
 
 

@@ -5,7 +5,7 @@
 	<groupId>urjc</groupId>
 	<artifactId>la-apostada-interno</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>La Apostada</name>
+	<name>La Apostada Interno</name>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
