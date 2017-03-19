@@ -1,5 +1,6 @@
 package apostada.entidades;
 
+import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 import java.util.Locale;
@@ -13,7 +14,7 @@ import javax.persistence.OneToMany;
 import javax.persistence.Transient;
 
 @Entity
-public class Partido {
+public class Partido implements Serializable {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)

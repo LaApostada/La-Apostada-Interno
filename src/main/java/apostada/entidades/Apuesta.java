@@ -1,5 +1,6 @@
 package apostada.entidades;
 
+import java.io.Serializable;
 import java.util.Date;
 
 import javax.persistence.Entity;
@@ -9,7 +10,7 @@ import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 
 @Entity
-public class Apuesta {
+public class Apuesta implements Serializable {
 
 	public final static int RESULTADO_VICTORIA_LOCAL = 1;
 	public final static int RESULTADO_EMPATE = 2;
