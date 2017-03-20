@@ -1,5 +1,6 @@
 package apostada.entidades;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import java.util.ArrayList;
 import java.util.List;
 import javax.persistence.ElementCollection;
@@ -27,6 +28,7 @@ public class Usuario {
 	private String passwordHash;
 	private double puntos;
 
+	@JsonIgnore
 	@OneToMany(mappedBy = "user")
 	private List<Apuesta> apuestas;
 	
@@ -42,7 +44,7 @@ public class Usuario {
 		email = e;
 		puntos = PUNTOS_POR_DEFECTO;
 		passwordHash = new BCryptPasswordEncoder().encode(p);
-		roles = new ArrayList<String>();
+		roles = new ArrayList<>();
 		roles.add("ROLE_USER");
 	}
 	
@@ -51,7 +53,7 @@ public class Usuario {
 		email = e;
 		puntos = PUNTOS_POR_DEFECTO;
 		passwordHash = new BCryptPasswordEncoder().encode(p);
-		roles = new ArrayList<String>();
+		roles = new ArrayList<>();
 		roles.add(rol);
 	}
 	
