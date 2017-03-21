@@ -13,7 +13,6 @@ import apostada.entidades.Apuesta;
 import apostada.entidades.Usuario;
 import apostada.servicios.UsuarioService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
 @RestController
@@ -71,6 +70,7 @@ public class ApuestaController {
 					// Hacer apuesta
 					usuario.restarPuntos(apuesta.getCantidadApostada());
 					partido.ajusteCuota(apuesta.getCantidadApostada(), apuesta.getResultado());
+					usuarioService.save(usuario);
 					partidoService.save(partido);
 					apuestaService.save(apuesta);
 
