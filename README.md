@@ -2,6 +2,12 @@
 
 Servicio Interno de aplicación La Apostada
 
-## Comunicación
+## Comunicación con La Apostada Web
 
-Sockets con la web de La Apostada
+**API REST mediante JSON**
+
+| Método | Endpoint | Parametro | Descripción
+|---|---|---|---|
+| POST | `/apuesta` | Objeto `Apuesta`| Crear apuesta
+
+
