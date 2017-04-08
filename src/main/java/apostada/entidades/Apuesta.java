@@ -115,4 +115,24 @@ public class Apuesta implements Serializable {
 		this.user = usuario;
 	}
 
+	@Override
+	public int hashCode() {
+		return Long.hashCode(this.id);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj) {
+			return true;
+		}
+		if (obj == null) {
+			return false;
+		}
+		if (getClass() != obj.getClass()) {
+			return false;
+		}
+		final Apuesta other = (Apuesta) obj;
+		return this.id == other.id;
+	}
+	
 }
