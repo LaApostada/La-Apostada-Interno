@@ -11,3 +11,4 @@ Servicio Interno de aplicación La Apostada
 | POST | `/apuesta` | Objeto `Apuesta`| Crear apuesta
 
 
+## Documentación de la interfaz del servicio interno
